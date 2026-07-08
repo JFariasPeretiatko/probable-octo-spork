@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5a623;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#533483;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGrad)" />
+
+  <!-- Outer decorative ring -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#e94560" stroke-width="2" stroke-dasharray="8 4" opacity="0.6" />
+
+  <!-- Inner arc band -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="url(#arcGrad)" stroke-width="18" opacity="0.5" />
+
+  <!-- Central star shape -->
+  <polygon
+    points="100,45 111,82 150,82 119,104 130,141 100,120 70,141 81,104 50,82 89,82"
+    fill="url(#starGrad)"
+    opacity="0.95"
+  />
+
+  <!-- Small sparkle dots -->
+  <circle cx="55"  cy="55"  r="4" fill="#f5a623" opacity="0.8" />
+  <circle cx="145" cy="55"  r="3" fill="#e94560" opacity="0.8" />
+  <circle cx="150" cy="145" r="4" fill="#f5a623" opacity="0.8" />
+  <circle cx="50"  cy="145" r="3" fill="#e94560" opacity="0.8" />
+  <circle cx="100" cy="30"  r="2.5" fill="#ffffff" opacity="0.7" />
+
+  <!-- Text label -->
+  <text
+    x="100"
+    y="178"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="13"
+    font-weight="bold"
+    letter-spacing="3"
+    fill="#e94560"
+  >CRISPY</text>
+</svg>
